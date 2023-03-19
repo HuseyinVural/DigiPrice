@@ -18,6 +18,10 @@
 		06F6CBD629C7AE7C00ED3CE0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD529C7AE7C00ED3CE0 /* CoreDataStack.swift */; };
 		06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD729C7B0D200ED3CE0 /* Logger.swift */; };
 		06F6CBDA29C7B40600ED3CE0 /* FavoriteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD929C7B40600ED3CE0 /* FavoriteDataProvider.swift */; };
+		06F6CBDC29C7B8BD00ED3CE0 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBDB29C7B8BD00ED3CE0 /* NetworkProvider.swift */; };
+		06F6CBDF29C7B92400ED3CE0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 06F6CBDE29C7B92400ED3CE0 /* CryptoSwift */; };
+		06F6CBE129C7BA5800ED3CE0 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE029C7BA5800ED3CE0 /* NetworkTarget.swift */; };
+		06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,9 @@
 		06F6CBD529C7AE7C00ED3CE0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		06F6CBD729C7B0D200ED3CE0 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		06F6CBD929C7B40600ED3CE0 /* FavoriteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataProvider.swift; sourceTree = "<group>"; };
+		06F6CBDB29C7B8BD00ED3CE0 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		06F6CBE029C7BA5800ED3CE0 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F6CBDF29C7B92400ED3CE0 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +144,9 @@
 		06F6CBC029C7ABFF00ED3CE0 /* Network Layer */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CBE229C7BCAC00ED3CE0 /* Response Items */,
+				06F6CBDB29C7B8BD00ED3CE0 /* NetworkProvider.swift */,
+				06F6CBE029C7BA5800ED3CE0 /* NetworkTarget.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -186,6 +197,14 @@
 			path = CurrencyDetail;
 			sourceTree = "<group>";
 		};
+		06F6CBE229C7BCAC00ED3CE0 /* Response Items */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */,
+			);
+			path = "Response Items";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +221,9 @@
 			dependencies = (
 			);
 			name = DigiPrice;
+			packageProductDependencies = (
+				06F6CBDE29C7B92400ED3CE0 /* CryptoSwift */,
+			);
 			productName = DigiPrice;
 			productReference = 06F6CBA029C7A73B00ED3CE0 /* DigiPrice.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +252,9 @@
 				Base,
 			);
 			mainGroup = 06F6CB9729C7A73B00ED3CE0;
+			packageReferences = (
+				06F6CBDD29C7B92400ED3CE0 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = 06F6CBA129C7A73B00ED3CE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,11 +285,14 @@
 				06F6CBD329C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataClass.swift in Sources */,
 				06F6CBDA29C7B40600ED3CE0 /* FavoriteDataProvider.swift in Sources */,
 				06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */,
+				06F6CBE129C7BA5800ED3CE0 /* NetworkTarget.swift in Sources */,
 				06F6CBD429C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift in Sources */,
+				06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */,
 				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
 				06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */,
 				06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */,
+				06F6CBDC29C7B8BD00ED3CE0 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06F6CBDD29C7B92400ED3CE0 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06F6CBDE29C7B92400ED3CE0 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06F6CBDD29C7B92400ED3CE0 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */ = {
