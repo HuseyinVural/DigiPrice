@@ -22,6 +22,10 @@
 		06F6CBDF29C7B92400ED3CE0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 06F6CBDE29C7B92400ED3CE0 /* CryptoSwift */; };
 		06F6CBE129C7BA5800ED3CE0 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE029C7BA5800ED3CE0 /* NetworkTarget.swift */; };
 		06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */; };
+		06F6CBE829C7BE8300ED3CE0 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE729C7BE8300ED3CE0 /* DataRepository.swift */; };
+		06F6CBEA29C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBE929C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift */; };
+		06F6CBEC29C7BECD00ED3CE0 /* PairResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBEB29C7BECD00ED3CE0 /* PairResponseItem.swift */; };
+		06F6CBEE29C7BF2600ED3CE0 /* PairChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBED29C7BF2600ED3CE0 /* PairChartResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		06F6CBDB29C7B8BD00ED3CE0 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		06F6CBE029C7BA5800ED3CE0 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
 		06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseItem.swift; sourceTree = "<group>"; };
+		06F6CBE729C7BE8300ED3CE0 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		06F6CBE929C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryProtocol.swift; sourceTree = "<group>"; };
+		06F6CBEB29C7BECD00ED3CE0 /* PairResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairResponseItem.swift; sourceTree = "<group>"; };
+		06F6CBED29C7BF2600ED3CE0 /* PairChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairChartResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,8 @@
 		06F6CBC229C7AC2E00ED3CE0 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CBE729C7BE8300ED3CE0 /* DataRepository.swift */,
+				06F6CBE929C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				06F6CBE529C7BCDD00ED3CE0 /* BaseResponseItem.swift */,
+				06F6CBEB29C7BECD00ED3CE0 /* PairResponseItem.swift */,
+				06F6CBED29C7BF2600ED3CE0 /* PairChartResponse.swift */,
 			);
 			path = "Response Items";
 			sourceTree = "<group>";
@@ -287,12 +299,16 @@
 				06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */,
 				06F6CBE129C7BA5800ED3CE0 /* NetworkTarget.swift in Sources */,
 				06F6CBD429C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift in Sources */,
+				06F6CBE829C7BE8300ED3CE0 /* DataRepository.swift in Sources */,
+				06F6CBEA29C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift in Sources */,
 				06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */,
 				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
 				06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */,
 				06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */,
+				06F6CBEC29C7BECD00ED3CE0 /* PairResponseItem.swift in Sources */,
 				06F6CBDC29C7B8BD00ED3CE0 /* NetworkProvider.swift in Sources */,
+				06F6CBEE29C7BF2600ED3CE0 /* PairChartResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
