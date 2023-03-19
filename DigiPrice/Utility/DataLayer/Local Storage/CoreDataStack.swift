@@ -13,7 +13,13 @@ final class CoreDataStack {
     
     private var customContainer: NSPersistentContainer?
     
-    // Fake container injection function that using integration test process
+    /// Sets the custom Core Data persistent container to be used in integration tests.
+    ///
+    /// - Parameter container: The custom persistent container to be used in integration tests.
+    ///
+    /// This function is used for injecting a custom persistent container for Core Data operations in integration tests.
+    /// The `container` parameter represents the custom persistent container to be injected.
+    /// The injected container will be used instead of the default persistent container during integration tests.
     func setCustomContainer(container: NSPersistentContainer?) {
         self.customContainer = container
     }

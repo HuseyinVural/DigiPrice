@@ -16,6 +16,7 @@
 		06F6CBD329C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD129C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataClass.swift */; };
 		06F6CBD429C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD229C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift */; };
 		06F6CBD629C7AE7C00ED3CE0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD529C7AE7C00ED3CE0 /* CoreDataStack.swift */; };
+		06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBD729C7B0D200ED3CE0 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		06F6CBD129C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritePairEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		06F6CBD229C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritePairEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		06F6CBD529C7AE7C00ED3CE0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		06F6CBD729C7B0D200ED3CE0 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		06F6CBBD29C7ABBC00ED3CE0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CBD729C7B0D200ED3CE0 /* Logger.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
 				06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */,
+				06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
