@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */; };
 		06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */; };
-		06F6CBA829C7A73B00ED3CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBA729C7A73B00ED3CE0 /* ViewController.swift */; };
 		06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */; };
 		06F6CBB029C7A73C00ED3CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */; };
 		06F6CBB329C7A73C00ED3CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBB129C7A73C00ED3CE0 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		06F6CBA029C7A73B00ED3CE0 /* DigiPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06F6CBA729C7A73B00ED3CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06F6CBAD29C7A73B00ED3CE0 /* DigiPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigiPrice.xcdatamodel; sourceTree = "<group>"; };
 		06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F6CBB229C7A73C00ED3CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,118 @@
 		06F6CBA229C7A73B00ED3CE0 /* DigiPrice */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CBC429C7AC5A00ED3CE0 /* Support */,
+				06F6CBC329C7AC5100ED3CE0 /* Screens */,
+				06F6CBBA29C7AB9C00ED3CE0 /* Utility */,
 				06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */,
 				06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */,
-				06F6CBA729C7A73B00ED3CE0 /* ViewController.swift */,
 				06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */,
 				06F6CBB129C7A73C00ED3CE0 /* LaunchScreen.storyboard */,
 				06F6CBB429C7A73C00ED3CE0 /* Info.plist */,
 				06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */,
 			);
 			path = DigiPrice;
+			sourceTree = "<group>";
+		};
+		06F6CBBA29C7AB9C00ED3CE0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CBBE29C7ABEC00ED3CE0 /* DataLayer */,
+				06F6CBBD29C7ABBC00ED3CE0 /* Helpers */,
+				06F6CBBC29C7ABB100ED3CE0 /* Base Classes */,
+				06F6CBBB29C7ABA900ED3CE0 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		06F6CBBB29C7ABA900ED3CE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06F6CBBC29C7ABB100ED3CE0 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		06F6CBBD29C7ABBC00ED3CE0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		06F6CBBE29C7ABEC00ED3CE0 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CBC229C7AC2E00ED3CE0 /* Repositories */,
+				06F6CBC029C7ABFF00ED3CE0 /* Network Layer */,
+				06F6CBBF29C7ABF700ED3CE0 /* Local Storage */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		06F6CBBF29C7ABF700ED3CE0 /* Local Storage */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CBC129C7AC1B00ED3CE0 /* Entites */,
+			);
+			path = "Local Storage";
+			sourceTree = "<group>";
+		};
+		06F6CBC029C7ABFF00ED3CE0 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		06F6CBC129C7AC1B00ED3CE0 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		06F6CBC229C7AC2E00ED3CE0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		06F6CBC329C7AC5100ED3CE0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CBC629C7AC8D00ED3CE0 /* CurrencyDetail */,
+				06F6CBC529C7AC7F00ED3CE0 /* CurrencyList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		06F6CBC429C7AC5A00ED3CE0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		06F6CBC529C7AC7F00ED3CE0 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		06F6CBC629C7AC8D00ED3CE0 /* CurrencyDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrencyDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F6CBA829C7A73B00ED3CE0 /* ViewController.swift in Sources */,
 				06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */,
 				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */,
