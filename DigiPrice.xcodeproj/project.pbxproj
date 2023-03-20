@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */; };
 		06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */; };
-		06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */; };
 		06F6CBB029C7A73C00ED3CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */; };
 		06F6CBB329C7A73C00ED3CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBB129C7A73C00ED3CE0 /* LaunchScreen.storyboard */; };
 		06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBCE29C7AE0600ED3CE0 /* DataStore.xcdatamodeld */; };
@@ -57,7 +56,6 @@
 		06F6CBA029C7A73B00ED3CE0 /* DigiPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06F6CBAD29C7A73B00ED3CE0 /* DigiPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigiPrice.xcdatamodel; sourceTree = "<group>"; };
 		06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F6CBB229C7A73C00ED3CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F6CBB429C7A73C00ED3CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,12 +133,7 @@
 				06F6CBC429C7AC5A00ED3CE0 /* Support */,
 				06F6CBC329C7AC5100ED3CE0 /* Screens */,
 				06F6CBBA29C7AB9C00ED3CE0 /* Utility */,
-				06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */,
-				06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */,
-				06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */,
-				06F6CBB129C7A73C00ED3CE0 /* LaunchScreen.storyboard */,
 				06F6CBB429C7A73C00ED3CE0 /* Info.plist */,
-				06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */,
 			);
 			path = DigiPrice;
 			sourceTree = "<group>";
@@ -246,6 +239,10 @@
 		06F6CBC429C7AC5A00ED3CE0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CBAF29C7A73C00ED3CE0 /* Assets.xcassets */,
+				06F6CBA329C7A73B00ED3CE0 /* AppDelegate.swift */,
+				06F6CBA529C7A73B00ED3CE0 /* SceneDelegate.swift */,
+				06F6CBB129C7A73C00ED3CE0 /* LaunchScreen.storyboard */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -463,7 +460,6 @@
 				06F6CBF529C7C46500ED3CE0 /* AppColors.swift in Sources */,
 				06F6CC2229C8131500ED3CE0 /* CurrencyDetailViewController.swift in Sources */,
 				06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */,
-				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
 				06F6CC2B29C8646700ED3CE0 /* AlerHandler.swift in Sources */,
 				06F6CBA629C7A73B00ED3CE0 /* SceneDelegate.swift in Sources */,
@@ -714,16 +710,6 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		06F6CBAC29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				06F6CBAD29C7A73B00ED3CE0 /* DigiPrice.xcdatamodel */,
-			);
-			currentVersion = 06F6CBAD29C7A73B00ED3CE0 /* DigiPrice.xcdatamodel */;
-			path = DigiPrice.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		06F6CBCE29C7AE0600ED3CE0 /* DataStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
