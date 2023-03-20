@@ -46,6 +46,10 @@
 		06F6CC1929C7CA9600ED3CE0 /* PairSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC1329C7CA9600ED3CE0 /* PairSectionHeaderView.swift */; };
 		06F6CC1A29C7CA9600ED3CE0 /* PairCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC1429C7CA9600ED3CE0 /* PairCell.xib */; };
 		06F6CC1C29C7CDC500ED3CE0 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC1B29C7CDC500ED3CE0 /* Controllers.swift */; };
+		06F6CC2229C8131500ED3CE0 /* CurrencyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */; };
+		06F6CC2329C8131500ED3CE0 /* CurrencyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */; };
+		06F6CC2629C8133400ED3CE0 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */; };
+		06F6CC2929C8138400ED3CE0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 06F6CC2829C8138400ED3CE0 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +93,9 @@
 		06F6CC1329C7CA9600ED3CE0 /* PairSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSectionHeaderView.swift; sourceTree = "<group>"; };
 		06F6CC1429C7CA9600ED3CE0 /* PairCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PairCell.xib; sourceTree = "<group>"; };
 		06F6CC1B29C7CDC500ED3CE0 /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
+		06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewController.swift; sourceTree = "<group>"; };
+		06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailViewController.xib; sourceTree = "<group>"; };
+		06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F6CBDF29C7B92400ED3CE0 /* CryptoSwift in Frameworks */,
+				06F6CC2929C8138400ED3CE0 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +260,8 @@
 		06F6CBC629C7AC8D00ED3CE0 /* CurrencyDetail */ = {
 			isa = PBXGroup;
 			children = (
+				06F6CC2429C8131A00ED3CE0 /* ViewModel */,
+				06F6CC1D29C812F800ED3CE0 /* View */,
 			);
 			path = CurrencyDetail;
 			sourceTree = "<group>";
@@ -325,6 +335,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		06F6CC1D29C812F800ED3CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */,
+				06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06F6CC2429C8131A00ED3CE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +370,7 @@
 			name = DigiPrice;
 			packageProductDependencies = (
 				06F6CBDE29C7B92400ED3CE0 /* CryptoSwift */,
+				06F6CC2829C8138400ED3CE0 /* Charts */,
 			);
 			productName = DigiPrice;
 			productReference = 06F6CBA029C7A73B00ED3CE0 /* DigiPrice.app */;
@@ -374,6 +402,7 @@
 			mainGroup = 06F6CB9729C7A73B00ED3CE0;
 			packageReferences = (
 				06F6CBDD29C7B92400ED3CE0 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				06F6CC2729C8138400ED3CE0 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 06F6CBA129C7A73B00ED3CE0 /* Products */;
 			projectDirPath = "";
@@ -390,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F6CBB329C7A73C00ED3CE0 /* LaunchScreen.storyboard in Resources */,
+				06F6CC2329C8131500ED3CE0 /* CurrencyDetailViewController.xib in Resources */,
 				06F6CBFA29C7C4E000ED3CE0 /* CurrencyListViewController.xib in Resources */,
 				06F6CC1729C7CA9600ED3CE0 /* FavoritedPairCell.xib in Resources */,
 				06F6CC1A29C7CA9600ED3CE0 /* PairCell.xib in Resources */,
@@ -428,6 +458,7 @@
 				06F6CC0229C7C60300ED3CE0 /* UICollectionView+Extensions.swift in Sources */,
 				06F6CBF029C7C3EC00ED3CE0 /* BaseXIBUIViewController.swift in Sources */,
 				06F6CBF529C7C46500ED3CE0 /* AppColors.swift in Sources */,
+				06F6CC2229C8131500ED3CE0 /* CurrencyDetailViewController.swift in Sources */,
 				06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */,
 				06F6CBAE29C7A73B00ED3CE0 /* DigiPrice.xcdatamodeld in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
@@ -436,6 +467,7 @@
 				06F6CBEC29C7BECD00ED3CE0 /* PairResponseItem.swift in Sources */,
 				06F6CBDC29C7B8BD00ED3CE0 /* NetworkProvider.swift in Sources */,
 				06F6CBF929C7C4E000ED3CE0 /* CurrencyListViewController.swift in Sources */,
+				06F6CC2629C8133400ED3CE0 /* CurrencyDetailViewModel.swift in Sources */,
 				06F6CBEE29C7BF2600ED3CE0 /* PairChartResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +686,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		06F6CC2729C8138400ED3CE0 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -661,6 +701,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 06F6CBDD29C7B92400ED3CE0 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
 			productName = CryptoSwift;
+		};
+		06F6CC2829C8138400ED3CE0 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06F6CC2729C8138400ED3CE0 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -16,6 +16,7 @@ class CurrencyListRouter: CurrencyListRoutable {
     weak var controller: UIViewController?
     
     func showChart(with pair: PairDisplayItem) {
-        #warning("Add Routing")
+        let chartController = Controllers.currencyDetail(pair: pair).controller
+        controller?.navigationController?.pushViewController(chartController, animated: true)
     }
 }

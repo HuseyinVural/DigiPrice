@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyDetailViewController" customModule="DigiPrice" customModuleProvider="target">
+            <connections>
+                <outlet property="chartView" destination="2n6-iz-e6B" id="ceb-Ll-Lfq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-MX-oEq">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-iz-e6B" customClass="LineChartView" customModule="Charts">
+                            <rect key="frame" x="18" y="120" width="354" height="140"/>
+                            <color key="backgroundColor" red="0.086274509799999996" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="QHD-M6-Xi3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="MainBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2n6-iz-e6B" secondAttribute="trailing" constant="18" id="Bxi-wG-20d"/>
+                        <constraint firstItem="2n6-iz-e6B" firstAttribute="leading" secondItem="Y2d-MX-oEq" secondAttribute="leading" constant="18" id="uSs-a6-VM5"/>
+                        <constraint firstItem="2n6-iz-e6B" firstAttribute="top" secondItem="Y2d-MX-oEq" secondAttribute="top" constant="120" id="udG-Gr-sWm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" name="PrimaryTextColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y2d-MX-oEq" secondAttribute="bottom" id="Es0-xX-HJo"/>
+                <constraint firstItem="Y2d-MX-oEq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a15-tg-EoW"/>
+                <constraint firstItem="Y2d-MX-oEq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="l7D-dM-C3O"/>
+                <constraint firstItem="Y2d-MX-oEq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="q5N-bE-ENM"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainBackgroundColor">
+            <color red="0.035000000149011612" green="0.063000001013278961" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
