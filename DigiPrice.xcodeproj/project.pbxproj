@@ -29,7 +29,7 @@
 		06F6CBF529C7C46500ED3CE0 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBF429C7C46500ED3CE0 /* AppColors.swift */; };
 		06F6CBF929C7C4E000ED3CE0 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBF729C7C4E000ED3CE0 /* CurrencyListViewController.swift */; };
 		06F6CBFA29C7C4E000ED3CE0 /* CurrencyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBF829C7C4E000ED3CE0 /* CurrencyListViewController.xib */; };
-		06F6CBFC29C7C50100ED3CE0 /* PairItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFB29C7C50100ED3CE0 /* PairItem.swift */; };
+		06F6CBFC29C7C50100ED3CE0 /* PairDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFB29C7C50100ED3CE0 /* PairDisplayItem.swift */; };
 		06F6CBFE29C7C53100ED3CE0 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFD29C7C53100ED3CE0 /* Double+Extensions.swift */; };
 		06F6CC0029C7C5DD00ED3CE0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFF29C7C5DD00ED3CE0 /* UIView+Extensions.swift */; };
 		06F6CC0229C7C60300ED3CE0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0129C7C60300ED3CE0 /* UICollectionView+Extensions.swift */; };
@@ -51,6 +51,7 @@
 		06F6CC2929C8138400ED3CE0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 06F6CC2829C8138400ED3CE0 /* Charts */; };
 		06F6CC2B29C8646700ED3CE0 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2A29C8646700ED3CE0 /* AlertHandler.swift */; };
 		06F6CC3429C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC3329C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift */; };
+		06F6CC3629C8BFA100ED3CE0 /* PairListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC3529C8BFA100ED3CE0 /* PairListSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +78,7 @@
 		06F6CBF429C7C46500ED3CE0 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		06F6CBF729C7C4E000ED3CE0 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
 		06F6CBF829C7C4E000ED3CE0 /* CurrencyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListViewController.xib; sourceTree = "<group>"; };
-		06F6CBFB29C7C50100ED3CE0 /* PairItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairItem.swift; sourceTree = "<group>"; };
+		06F6CBFB29C7C50100ED3CE0 /* PairDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDisplayItem.swift; sourceTree = "<group>"; };
 		06F6CBFD29C7C53100ED3CE0 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		06F6CBFF29C7C5DD00ED3CE0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		06F6CC0129C7C60300ED3CE0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		06F6CC2A29C8646700ED3CE0 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 		06F6CC3029C88B2900ED3CE0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		06F6CC3329C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelProtocols.swift; sourceTree = "<group>"; };
+		06F6CC3529C8BFA100ED3CE0 /* PairListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +285,8 @@
 		06F6CBF129C7C43300ED3CE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CBFB29C7C50100ED3CE0 /* PairItem.swift */,
+				06F6CBFB29C7C50100ED3CE0 /* PairDisplayItem.swift */,
+				06F6CC3529C8BFA100ED3CE0 /* PairListSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,10 +456,11 @@
 				06F6CBE829C7BE8300ED3CE0 /* DataRepository.swift in Sources */,
 				06F6CBEA29C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift in Sources */,
 				06F6CC0B29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift in Sources */,
-				06F6CBFC29C7C50100ED3CE0 /* PairItem.swift in Sources */,
+				06F6CBFC29C7C50100ED3CE0 /* PairDisplayItem.swift in Sources */,
 				06F6CC1529C7CA9600ED3CE0 /* FavoritedPairCell.swift in Sources */,
 				06F6CBFE29C7C53100ED3CE0 /* Double+Extensions.swift in Sources */,
 				06F6CC0D29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift in Sources */,
+				06F6CC3629C8BFA100ED3CE0 /* PairListSection.swift in Sources */,
 				06F6CC0029C7C5DD00ED3CE0 /* UIView+Extensions.swift in Sources */,
 				06F6CC0529C7C6D100ED3CE0 /* CurrencyListRouter.swift in Sources */,
 				06F6CC0929C7C9FB00ED3CE0 /* CurrencyListDatasource.swift in Sources */,

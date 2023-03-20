@@ -15,6 +15,7 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
     private var favoritedPairList: [PairDisplayItem] = [.init(isRising: false)]
     private var pairList: [PairDisplayItem] = [.init(isRising: true)]
     private var favoritesMap: [AnyHashable: PairDisplayItem] = [:]
+    private var sections: [PairListSection] = []
     
     var reload: (() -> Void)!
     var showCollection: (() -> Void)!
@@ -54,6 +55,7 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
             pair.isFavorited = true
         }
         
+        updateSections()
         reload()
     }
     
@@ -100,6 +102,8 @@ extension CurrencyListViewModel {
                     }
                 }
                 
+                self.updateSections()
+                
                 await MainActor.run {
                     self.reload()
                     self.showCollection()
@@ -123,27 +127,43 @@ extension CurrencyListViewModel {
         - returns: The PairDisplayItem corresponding to the given IndexPath.
     */
     private func getPairDisplayItem(from indexPath: IndexPath) -> PairDisplayItem {
-        var source = indexPath.section == 0 ? favoritedPairList : pairList
-        if numberOfSections() == 1 {
-            source = pairList
+        switch getSectionType(section: indexPath.section) {
+        case .favorites:
+            return favoritedPairList[indexPath.row]
+        case .pairs:
+            return pairList[indexPath.row]
+        }
+    }
+    
+    
+    /**
+        Check section status, Should be call when data change.
+    */
+    private func updateSections() {
+        sections.removeAll()
+        if favoritedPairList.count > 1 {
+            sections.append(.favorites)
         }
         
-        return source[indexPath.row]
+        if pairList.count > 1 {
+            sections.append(.pairs)
+        }
     }
 }
 
 // MARK: - CurrencyListViewModelDataManageable, responsible for data needs
 extension CurrencyListViewModel {
     func numberOfSections() -> Int {
-        return favoritedPairList.count > 0 ? 2 : 1
+        return sections.count
     }
     
     func collectionView(numberOfItemsInSection section: Int) -> Int {
-        if numberOfSections() == 1 {
+        switch getSectionType(section: section) {
+        case .favorites:
+            return favoritedPairList.count
+        case .pairs:
             return pairList.count
         }
-        
-        return section == 0 ? favoritedPairList.count : pairList.count
     }
     
     func collectionView(cellForItemAt indexPath: IndexPath) -> PairDisplayItem {
@@ -151,10 +171,15 @@ extension CurrencyListViewModel {
     }
     
     func getSectionTitle(section: Int) -> String {
-        if section == 0 && numberOfSections() > 1 {
+        switch getSectionType(section: section) {
+        case .favorites:
             return "Favorites"
-        } else {
+        case .pairs:
             return "Pairs"
         }
+    }
+    
+    func getSectionType(section: Int) -> PairListSection {
+        return sections[section]
     }
 }

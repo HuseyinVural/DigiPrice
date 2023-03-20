@@ -26,4 +26,5 @@ protocol CurrencyListViewModelDataManageable: CurrencyListViewModelSelectionMana
     func collectionView(numberOfItemsInSection section: Int) -> Int
     func collectionView(cellForItemAt indexPath: IndexPath) -> PairDisplayItem
     func getSectionTitle(section: Int) -> String
+    func getSectionType(section: Int) -> PairListSection
 }

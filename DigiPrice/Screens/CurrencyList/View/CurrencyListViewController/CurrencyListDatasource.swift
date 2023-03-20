@@ -29,12 +29,13 @@ final class CurrencyListDatasource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = viewModel.collectionView(cellForItemAt: indexPath)
-        switch indexPath.section {
-        case 0 where viewModel.numberOfSections() > 1:
+        
+        switch viewModel.getSectionType(section: indexPath.section) {
+        case .favorites:
             let cell: FavoritedPairCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.setup(item)
             return cell
-        default:
+        case .pairs:
             let cell: PairCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.setup(item) { [weak self] in
                 self?.viewModel.tapFavoriteButton(indexPath)
