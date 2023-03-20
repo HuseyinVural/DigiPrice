@@ -7,27 +7,6 @@
 
 import Foundation
 
-protocol CurrencyListViewModelable: CurrencyListViewModelDataManageable {
-    var reload: (() -> Void)! { get set }
-    var showCollection: (() -> Void)! { get set }
-    var showPairChart: ((_ pair: PairDisplayItem) -> Void)! { get set }
-    var showDataOperationFail: AlertClosureSignature! { get set }
-
-    func viewDidLoad()
-}
-
-protocol CurrencyListViewModelSelectionManageable {
-    func tapFavoriteButton(_ indexPath: IndexPath)
-    func didSelectPair(_ indexPath: IndexPath)
-}
-
-protocol CurrencyListViewModelDataManageable: CurrencyListViewModelSelectionManageable {
-    func numberOfSections() -> Int
-    func collectionView(numberOfItemsInSection section: Int) -> Int
-    func collectionView(cellForItemAt indexPath: IndexPath) -> PairDisplayItem
-    func getSectionTitle(section: Int) -> String
-}
-
 final class CurrencyListViewModel: CurrencyListViewModelable {
     typealias DataLayerProtocol = PairsRepositoryProtocol & FavoritesRepositoryProtocol
     
@@ -68,7 +47,6 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
             item.isFavorited = false
             favoritesMap.removeValue(forKey: pair.symbol)
             favoritedPairList.removeAll(where: { $0.symbol == pair.symbol })
-            CoreDataStack.shared.saveContext()
         } else {
             dataRepository.setFavorite(pair.symbol)
             favoritedPairList.append(pair)

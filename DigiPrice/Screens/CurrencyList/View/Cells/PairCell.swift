@@ -26,7 +26,8 @@ final class PairCell: UICollectionViewCell {
         dailyPercentLabel.textColor = UIColor(named: item.dailyPercentColorName)
     }
     
-    @IBAction private func tapFavoriteButtonAction(_ sender: Any) {
+    @IBAction
+    private func tapFavoriteButtonAction(_ sender: Any) {
         favoriteAction?()
     }
 }

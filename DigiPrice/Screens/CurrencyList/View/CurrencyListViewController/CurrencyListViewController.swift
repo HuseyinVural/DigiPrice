@@ -13,11 +13,11 @@ final class CurrencyListViewController: BaseXIBUIViewController {
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     
     // MARK: - Variables
-    private var viewModel: CurrencyListViewModelable
-    private var router: CurrencyListRoutable
-    private var datasource: UICollectionViewDataSource?
-    private var collectionDelegate: UICollectionViewDelegate?
-    private var compositionalLayoutFactory: CompositionalLayoutFactory!
+    private let viewModel: CurrencyListViewModelable
+    private let router: CurrencyListRoutable
+    private let datasource: UICollectionViewDataSource?
+    private let collectionDelegate: UICollectionViewDelegate?
+    private let compositionalLayoutFactory: CompositionalLayoutFactory
     
     // MARK: - Lifecycle Methods
     init(dependencies: Dependencies) {
@@ -35,10 +35,6 @@ final class CurrencyListViewController: BaseXIBUIViewController {
         super.viewDidLoad()
         viewModel.viewDidLoad()
         applyCollectionViewSettings()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
