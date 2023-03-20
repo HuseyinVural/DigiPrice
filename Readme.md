@@ -4,6 +4,11 @@ DigiPrice is a fast test project for iOS platform that allows you to list coin p
 
 This project is designed in accordance with the MVVM (Model-View-ViewModel) and SOLID principles and is suitable for future growth and scalability.
 
+## Attention
+Since it is a lighter way solution and not affecting user interaction, the ```core-data``` object references are registered in the app's background, suspend, and interrupt cases.
+
+If you are testing with the simulator, your favorites ```will not be recorded in the Xcode rebuild case```. This is an expected exception specific to the development environment.
+
 <p align="center">
     <img src= "https://i.imgur.com/i5HmXM4.png" width="35%" >
     <img src= "https://i.imgur.com/jJm4lhR.png" width="35%" >
