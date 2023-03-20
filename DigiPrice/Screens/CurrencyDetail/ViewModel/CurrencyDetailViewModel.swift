@@ -17,6 +17,7 @@ protocol CurrencyDetailViewModelable: AnyObject {
 final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
     private let pair: PairDisplayItem
     private var dataRepository: ChartRepositoryProtocol
+    private var logger: ErrorLoggable
     
     var didGetChartData: ((_ data: LineChartDataSet) -> Void)!
     var didGetNavigationBarTitle: ((_ title: String) -> Void)!
@@ -29,10 +30,12 @@ final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
      */
     init(
         pair: PairDisplayItem,
-        dataRepository: ChartRepositoryProtocol
+        dataRepository: ChartRepositoryProtocol,
+        logger: ErrorLoggable
     ) {
         self.pair = pair
         self.dataRepository = dataRepository
+        self.logger = logger
     }
     
     /**
@@ -50,12 +53,14 @@ final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
 
      Calls `dataRepository.getChartDetail(symbol:resolution:from:to:)` and `makeChartData(x:y:)`.
 
-     - throws: An error if fetching the chart data fails.
+     - throws: An error if fetching the chart data fails, Errors are sent to the logging tool
 
      - returns: A `LineChartDataSet` that represents the chart data.
      */
     private func fetch() {
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
+            
             do {
                 let now = Date()
                 let from = Calendar.current.date(byAdding: .day, value: -3, to: now)
@@ -71,7 +76,7 @@ final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
                     didGetChartData(chartData)
                 }
             } catch {
-                print("Error: \(error.localizedDescription)")
+                self.logger.log(error, with: ["PAIR": pair.symbol])
             }
         }
     }

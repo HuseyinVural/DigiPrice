@@ -24,10 +24,10 @@ enum Controllers {
     var controller: UIViewController {
         switch self {
         case .currencyList:
-            let viewModel = CurrencyListViewModel(dataRepository: DataRepository.shared)
+            let viewModel = CurrencyListViewModel(dataRepository: DataRepository.shared, logger: Logger())
             return CurrencyListViewController(dependencies: .default(viewModel: viewModel))
         case .currencyDetail(let pair):
-            let viewModel = CurrencyDetailViewModel(pair: pair, dataRepository: DataRepository.shared)
+            let viewModel = CurrencyDetailViewModel(pair: pair, dataRepository: DataRepository.shared, logger: Logger())
             return CurrencyDetailViewController(viewModel: viewModel)
         }
     }

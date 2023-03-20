@@ -32,6 +32,7 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
     typealias DataLayerProtocol = PairsRepositoryProtocol & FavoritesRepositoryProtocol
     
     private var dataRepository: DataLayerProtocol
+    private var logger: ErrorLoggable
     private var favoritedPairList: [PairDisplayItem] = [.init(isRising: false)]
     private var pairList: [PairDisplayItem] = [.init(isRising: true)]
     private var favoritesMap: [AnyHashable: PairDisplayItem] = [:]
@@ -41,7 +42,8 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
     var showPairChart: ((_ pair: PairDisplayItem) -> Void)!
     var showDataOperationFail: AlertClosureSignature!
     
-    init(dataRepository: DataLayerProtocol) {
+    init(dataRepository: DataLayerProtocol, logger: ErrorLoggable) {
+        self.logger = logger
         self.dataRepository = dataRepository
     }
     
@@ -125,6 +127,7 @@ extension CurrencyListViewModel {
                     self.showCollection()
                 }
             } catch {
+                self.logger.log(error, with: [:])
                 await MainActor.run {
                     self.showDataOperationFail("Retry", error.localizedDescription) {
                         self.fetch()
