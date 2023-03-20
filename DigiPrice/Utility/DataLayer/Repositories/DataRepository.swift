@@ -12,6 +12,7 @@ import Foundation
  Manages and abstracts communication with Memory, Network or persistent data providers.
  */
 open class DataRepository: DataRepositoryProtocol {
+    static var shared: DataRepositoryProtocol = DataRepository.init(dependencies: .default())
     private let favoriteDataProvider: FavoriteDataProvidable
     private let networkProvider: NetworkProvidable
     

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoritedPairCell" customModule="DigiPrice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="77"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYw-Nm-Ugc" userLabel="Container">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="77"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="koN-Pd-zzu">
+                                <rect key="frame" x="6" y="6" width="147" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pair Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-po-VjN">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwM-Aa-eHS">
+                                        <rect key="frame" x="0.0" y="26" width="147" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DailyPercent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-zV-y9Q">
+                                        <rect key="frame" x="0.0" y="52" width="147" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" name="HighlightedNegativeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="koN-Pd-zzu" firstAttribute="top" secondItem="PYw-Nm-Ugc" secondAttribute="top" constant="6" id="33N-d6-qi8"/>
+                            <constraint firstItem="koN-Pd-zzu" firstAttribute="leading" secondItem="PYw-Nm-Ugc" secondAttribute="leading" constant="6" id="9QX-Nd-q9b"/>
+                            <constraint firstAttribute="trailing" secondItem="koN-Pd-zzu" secondAttribute="trailing" constant="2" id="DSJ-EJ-vga"/>
+                            <constraint firstAttribute="bottom" secondItem="koN-Pd-zzu" secondAttribute="bottom" constant="6" id="abV-oh-kAs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="PYw-Nm-Ugc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8oK-6N-iWq"/>
+                <constraint firstItem="PYw-Nm-Ugc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SPx-w5-K7f"/>
+                <constraint firstAttribute="bottom" secondItem="PYw-Nm-Ugc" secondAttribute="bottom" id="YBW-ud-W7q"/>
+                <constraint firstAttribute="trailing" secondItem="PYw-Nm-Ugc" secondAttribute="trailing" id="w0X-FL-p7Y"/>
+            </constraints>
+            <size key="customSize" width="155" height="77"/>
+            <connections>
+                <outlet property="dailyPercentLabel" destination="59Y-zV-y9Q" id="yV0-lh-DWd"/>
+                <outlet property="lastPriceLabel" destination="jwM-Aa-eHS" id="sPa-Wm-rr9"/>
+                <outlet property="pairNameLabel" destination="7hC-po-VjN" id="hV8-d3-xGl"/>
+            </connections>
+            <point key="canvasLocation" x="76.153846153846146" y="64.33649289099526"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="HighlightedNegativeColor">
+            <color red="0.83921568627450982" green="0.19215686274509805" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBackgroundColor">
+            <color red="0.10588235294117647" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
