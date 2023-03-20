@@ -6,7 +6,7 @@ This project is designed in accordance with the MVVM (Model-View-ViewModel) and 
 
 <p align="center">
     <img src= "https://i.imgur.com/i5HmXM4.png" width="35%" >
-    <img src= "https://i.imgur.com/i5HmXM4.png" width="35%" >
+    <img src= "https://i.imgur.com/jJm4lhR.png" width="35%" >
 </p>
 
 
