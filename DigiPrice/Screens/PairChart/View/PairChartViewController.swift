@@ -1,5 +1,5 @@
 //
-//  CurrencyDetailViewController.swift
+//  PairChartViewController.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -8,15 +8,15 @@
 import UIKit
 import Charts
 
-final class CurrencyDetailViewController: BaseXIBUIViewController, UIGestureRecognizerDelegate {
+final class PairChartViewController: BaseXIBUIViewController, UIGestureRecognizerDelegate {
     // MARK: - Outlets
     @IBOutlet private weak var chartView: LineChartView!
     
     // MARK: - Variables
-    private let viewModel: CurrencyDetailViewModelable
+    private let viewModel: PairChartViewModelable
     
     // MARK: - Lifecycle Methods
-    init(viewModel: CurrencyDetailViewModelable) {
+    init(viewModel: PairChartViewModelable) {
         self.viewModel = viewModel
         super.init()
         self.bindViewModelProperties()
@@ -31,7 +31,7 @@ final class CurrencyDetailViewController: BaseXIBUIViewController, UIGestureReco
 }
 
 // MARK: - Private Utils
-extension CurrencyDetailViewController {
+extension PairChartViewController {
     private func applyInitialChartSettings() {
         let rAxis = chartView.rightAxis
         rAxis.setLabelCount(6, force: false)

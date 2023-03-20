@@ -8,7 +8,7 @@
 import Foundation
 
 extension Double {
-    /// Formats Float price using "Decimal" number formatter without Currency symbol
+    /// Formats Float price using "Decimal" number formatter **without currency** symbol
     ///
     /// - Parameters:
     ///   - priceLocale: Locale to format product with.

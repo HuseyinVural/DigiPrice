@@ -1,5 +1,5 @@
 //
-//  CurrencyListDelegate.swift
+//  PairListDelegate.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -12,10 +12,10 @@ import UIKit
     - It is used to soften the dependency in the View and contribute to the testing process.
     - Note: This class is not thread-safe, and should be accessed from the main thread only.
  */
-final class CurrencyListDelegate: NSObject, UICollectionViewDelegate {
-    private let viewModel: CurrencyListViewModelSelectionManageable
+final class PairListDelegate: NSObject, UICollectionViewDelegate {
+    private let viewModel: PairListViewModelSelectionManageable
     
-    init(viewModel: CurrencyListViewModelSelectionManageable) {
+    init(viewModel: PairListViewModelSelectionManageable) {
         self.viewModel = viewModel
     }
     

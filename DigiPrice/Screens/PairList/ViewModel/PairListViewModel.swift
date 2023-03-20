@@ -1,5 +1,5 @@
 //
-//  CurrencyListViewModel.swift
+//  PairListViewModel.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class CurrencyListViewModel: CurrencyListViewModelable {
+final class PairListViewModel: PairListViewModelable {
     typealias DataLayerProtocol = PairsRepositoryProtocol & FavoritesRepositoryProtocol
     
     private var dataRepository: DataLayerProtocol
@@ -75,7 +75,7 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
 }
 
 // MARK: - Private utils functions
-extension CurrencyListViewModel {
+extension PairListViewModel {
     
     /**
      Fetches pairs and favorites from the data repository and populates the view model's pairList and favoritedPairList properties.
@@ -151,8 +151,8 @@ extension CurrencyListViewModel {
     }
 }
 
-// MARK: - CurrencyListViewModelDataManageable, responsible for data needs
-extension CurrencyListViewModel {
+// MARK: - PairListViewModelDataManageable, responsible for data needs
+extension PairListViewModel {
     func numberOfSections() -> Int {
         return sections.count
     }

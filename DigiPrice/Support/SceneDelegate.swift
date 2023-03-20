@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func insetInitialController(_ windowScene: UIWindowScene) {
-        let nvc = UINavigationController(rootViewController: Controllers.currencyList.controller)
+        let nvc = UINavigationController(rootViewController: Controllers.pairList.controller)
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = nvc
         self.window = window

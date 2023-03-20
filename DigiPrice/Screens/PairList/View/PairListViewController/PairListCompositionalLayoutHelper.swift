@@ -1,5 +1,5 @@
 //
-//  CurrencyListCompositionalLayoutHelper.swift
+//  PairListCompositionalLayoutHelper.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -17,10 +17,10 @@ protocol CompositionalLayoutFactory {
 /**
  - Layout schema injectable into any view
 */
-final class CurrencyListCompositionalLayoutHelper: CompositionalLayoutFactory {
-    private let viewModel: CurrencyListViewModelDataManageable
+final class PairListCompositionalLayoutHelper: CompositionalLayoutFactory {
+    private let viewModel: PairListViewModelDataManageable
     
-    init(viewModel: CurrencyListViewModelDataManageable) {
+    init(viewModel: PairListViewModelDataManageable) {
         self.viewModel = viewModel
     }
 

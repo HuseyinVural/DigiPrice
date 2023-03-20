@@ -1,5 +1,5 @@
 //
-//  CurrencyDetailViewModel.swift
+//  PairChartViewModel.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -8,13 +8,13 @@
 import Foundation
 import Charts
 
-protocol CurrencyDetailViewModelable: AnyObject {
+protocol PairChartViewModelable: AnyObject {
     var didGetChartData: ((_ data: LineChartDataSet) -> Void)! { get set }
     var didGetNavigationBarTitle: ((_ title: String) -> Void)! { get set }
     func viewDidLoad()
 }
 
-final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
+final class PairChartViewModel: PairChartViewModelable {
     private let pair: PairDisplayItem
     private var dataRepository: ChartRepositoryProtocol
     private var logger: ErrorLoggable
@@ -23,7 +23,7 @@ final class CurrencyDetailViewModel: CurrencyDetailViewModelable {
     var didGetNavigationBarTitle: ((_ title: String) -> Void)!
 
     /**
-     Initializes a new `CurrencyDetailViewModel`.
+     Initializes a new `PairChartViewModel`.
 
      - parameter pair: A `PairDisplayItem` that contains information about the currency pair to display.
      - parameter dataRepository: A `ChartRepositoryProtocol`, it can provide from one of data repository instance

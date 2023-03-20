@@ -1,5 +1,5 @@
 //
-//  CurrencyListDatasource.swift
+//  PairListDatasource.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -8,14 +8,14 @@
 import UIKit
 
 /**
-    -  A `UICollectionViewDataSource` that provides data to display on a currency list.
+    -  A `UICollectionViewDataSource` that provides data to display on a pair list.
     - It is used to soften the dependency in the View and contribute to the testing process.
     - Note: This class is not thread-safe, and should be accessed from the main thread only.
  */
-final class CurrencyListDatasource: NSObject, UICollectionViewDataSource {
-    private var viewModel: CurrencyListViewModelDataManageable
+final class PairListDatasource: NSObject, UICollectionViewDataSource {
+    private var viewModel: PairListViewModelDataManageable
     
-    init(viewModel: CurrencyListViewModelDataManageable) {
+    init(viewModel: PairListViewModelDataManageable) {
         self.viewModel = viewModel
     }
     

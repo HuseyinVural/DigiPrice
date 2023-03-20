@@ -1,5 +1,5 @@
 //
-//  CurrencyListViewModelProtocols.swift
+//  PairListViewModelProtocols.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CurrencyListViewModelable: CurrencyListViewModelDataManageable, AnyObject {
+protocol PairListViewModelable: PairListViewModelDataManageable, AnyObject {
     var reload: (() -> Void)! { get set }
     var showCollection: (() -> Void)! { get set }
     var showPairChart: ((_ pair: PairDisplayItem) -> Void)! { get set }
@@ -16,12 +16,12 @@ protocol CurrencyListViewModelable: CurrencyListViewModelDataManageable, AnyObje
     func viewDidLoad()
 }
 
-protocol CurrencyListViewModelSelectionManageable {
+protocol PairListViewModelSelectionManageable {
     func tapFavoriteButton(_ indexPath: IndexPath)
     func didSelectPair(_ indexPath: IndexPath)
 }
 
-protocol CurrencyListViewModelDataManageable: CurrencyListViewModelSelectionManageable {
+protocol PairListViewModelDataManageable: PairListViewModelSelectionManageable {
     func numberOfSections() -> Int
     func collectionView(numberOfItemsInSection section: Int) -> Int
     func collectionView(cellForItemAt indexPath: IndexPath) -> PairDisplayItem

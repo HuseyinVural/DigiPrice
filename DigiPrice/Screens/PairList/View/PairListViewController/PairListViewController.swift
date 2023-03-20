@@ -1,5 +1,5 @@
 //
-//  CurrencyListViewController.swift
+//  PairListViewController.swift
 //  DigiPrice
 //
 //  Created by Hüseyin Vural on 20.03.2023.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-final class CurrencyListViewController: BaseXIBUIViewController {
+final class PairListViewController: BaseXIBUIViewController {
     // MARK: - Outlets
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     
     // MARK: - Variables
-    private let viewModel: CurrencyListViewModelable
-    private let router: CurrencyListRoutable
+    private let viewModel: PairListViewModelable
+    private let router: PairListRoutable
     private let datasource: UICollectionViewDataSource?
     private let collectionDelegate: UICollectionViewDelegate?
     private let compositionalLayoutFactory: CompositionalLayoutFactory
@@ -25,7 +25,7 @@ final class CurrencyListViewController: BaseXIBUIViewController {
         self.datasource = dependencies.datasource
         self.collectionDelegate = dependencies.collectionDelegate
         self.compositionalLayoutFactory = dependencies.compositionalLayoutFactory
-        self.router = CurrencyListRouter()
+        self.router = PairListRouter()
         super.init()
         self.router.controller = self
         self.bindViewModelProperties()
@@ -40,7 +40,7 @@ final class CurrencyListViewController: BaseXIBUIViewController {
 }
 
 // MARK: - Private helpers
-extension CurrencyListViewController {
+extension PairListViewController {
     private func applyCollectionViewSettings() {
         collectionView.registerCells(FavoritedPairCell.self, PairCell.self)
         collectionView.registerHeaders(PairSectionHeaderView.self)
@@ -89,22 +89,22 @@ extension CurrencyListViewController {
 }
 
 // MARK: - Quick initial/injection environment
-extension CurrencyListViewController {
+extension PairListViewController {
     struct Dependencies {
-        let model: CurrencyListViewModelable
+        let model: PairListViewModelable
         let datasource: UICollectionViewDataSource
         let collectionDelegate: UICollectionViewDelegate
         let compositionalLayoutFactory: CompositionalLayoutFactory
     }
 }
 
-extension CurrencyListViewController.Dependencies {
-    static func `default`(viewModel: CurrencyListViewModelable) -> Self {
+extension PairListViewController.Dependencies {
+    static func `default`(viewModel: PairListViewModelable) -> Self {
         return .init(
             model: viewModel,
-            datasource: CurrencyListDatasource(viewModel: viewModel),
-            collectionDelegate: CurrencyListDelegate(viewModel: viewModel),
-            compositionalLayoutFactory: CurrencyListCompositionalLayoutHelper(viewModel: viewModel)
+            datasource: PairListDatasource(viewModel: viewModel),
+            collectionDelegate: PairListDelegate(viewModel: viewModel),
+            compositionalLayoutFactory: PairListCompositionalLayoutHelper(viewModel: viewModel)
         )
     }
 }

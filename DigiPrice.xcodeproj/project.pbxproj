@@ -27,17 +27,17 @@
 		06F6CBEE29C7BF2600ED3CE0 /* PairChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBED29C7BF2600ED3CE0 /* PairChartResponse.swift */; };
 		06F6CBF029C7C3EC00ED3CE0 /* BaseXIBUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBEF29C7C3EC00ED3CE0 /* BaseXIBUIViewController.swift */; };
 		06F6CBF529C7C46500ED3CE0 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBF429C7C46500ED3CE0 /* AppColors.swift */; };
-		06F6CBF929C7C4E000ED3CE0 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBF729C7C4E000ED3CE0 /* CurrencyListViewController.swift */; };
-		06F6CBFA29C7C4E000ED3CE0 /* CurrencyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBF829C7C4E000ED3CE0 /* CurrencyListViewController.xib */; };
+		06F6CBF929C7C4E000ED3CE0 /* PairListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBF729C7C4E000ED3CE0 /* PairListViewController.swift */; };
+		06F6CBFA29C7C4E000ED3CE0 /* PairListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CBF829C7C4E000ED3CE0 /* PairListViewController.xib */; };
 		06F6CBFC29C7C50100ED3CE0 /* PairDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFB29C7C50100ED3CE0 /* PairDisplayItem.swift */; };
 		06F6CBFE29C7C53100ED3CE0 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFD29C7C53100ED3CE0 /* Double+Extensions.swift */; };
 		06F6CC0029C7C5DD00ED3CE0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CBFF29C7C5DD00ED3CE0 /* UIView+Extensions.swift */; };
 		06F6CC0229C7C60300ED3CE0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0129C7C60300ED3CE0 /* UICollectionView+Extensions.swift */; };
-		06F6CC0529C7C6D100ED3CE0 /* CurrencyListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0429C7C6D100ED3CE0 /* CurrencyListRouter.swift */; };
-		06F6CC0729C7C70600ED3CE0 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0629C7C70600ED3CE0 /* CurrencyListViewModel.swift */; };
-		06F6CC0929C7C9FB00ED3CE0 /* CurrencyListDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0829C7C9FB00ED3CE0 /* CurrencyListDatasource.swift */; };
-		06F6CC0B29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0A29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift */; };
-		06F6CC0D29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0C29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift */; };
+		06F6CC0529C7C6D100ED3CE0 /* PairListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0429C7C6D100ED3CE0 /* PairListRouter.swift */; };
+		06F6CC0729C7C70600ED3CE0 /* PairListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0629C7C70600ED3CE0 /* PairListViewModel.swift */; };
+		06F6CC0929C7C9FB00ED3CE0 /* PairListDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0829C7C9FB00ED3CE0 /* PairListDatasource.swift */; };
+		06F6CC0B29C7CA0D00ED3CE0 /* PairListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0A29C7CA0D00ED3CE0 /* PairListDelegate.swift */; };
+		06F6CC0D29C7CA2200ED3CE0 /* PairListCompositionalLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0C29C7CA2200ED3CE0 /* PairListCompositionalLayoutHelper.swift */; };
 		06F6CC1529C7CA9600ED3CE0 /* FavoritedPairCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC0F29C7CA9600ED3CE0 /* FavoritedPairCell.swift */; };
 		06F6CC1629C7CA9600ED3CE0 /* PairCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC1029C7CA9600ED3CE0 /* PairCell.swift */; };
 		06F6CC1729C7CA9600ED3CE0 /* FavoritedPairCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC1129C7CA9600ED3CE0 /* FavoritedPairCell.xib */; };
@@ -45,12 +45,12 @@
 		06F6CC1929C7CA9600ED3CE0 /* PairSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC1329C7CA9600ED3CE0 /* PairSectionHeaderView.swift */; };
 		06F6CC1A29C7CA9600ED3CE0 /* PairCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC1429C7CA9600ED3CE0 /* PairCell.xib */; };
 		06F6CC1C29C7CDC500ED3CE0 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC1B29C7CDC500ED3CE0 /* Controllers.swift */; };
-		06F6CC2229C8131500ED3CE0 /* CurrencyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */; };
-		06F6CC2329C8131500ED3CE0 /* CurrencyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */; };
-		06F6CC2629C8133400ED3CE0 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */; };
+		06F6CC2229C8131500ED3CE0 /* PairChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2029C8131500ED3CE0 /* PairChartViewController.swift */; };
+		06F6CC2329C8131500ED3CE0 /* PairChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F6CC2129C8131500ED3CE0 /* PairChartViewController.xib */; };
+		06F6CC2629C8133400ED3CE0 /* PairChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2529C8133400ED3CE0 /* PairChartViewModel.swift */; };
 		06F6CC2929C8138400ED3CE0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 06F6CC2829C8138400ED3CE0 /* Charts */; };
 		06F6CC2B29C8646700ED3CE0 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC2A29C8646700ED3CE0 /* AlertHandler.swift */; };
-		06F6CC3429C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC3329C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift */; };
+		06F6CC3429C89C7300ED3CE0 /* PairListViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC3329C89C7300ED3CE0 /* PairListViewModelProtocols.swift */; };
 		06F6CC3629C8BFA100ED3CE0 /* PairListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6CC3529C8BFA100ED3CE0 /* PairListSection.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,17 +76,17 @@
 		06F6CBED29C7BF2600ED3CE0 /* PairChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairChartResponse.swift; sourceTree = "<group>"; };
 		06F6CBEF29C7C3EC00ED3CE0 /* BaseXIBUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXIBUIViewController.swift; sourceTree = "<group>"; };
 		06F6CBF429C7C46500ED3CE0 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		06F6CBF729C7C4E000ED3CE0 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
-		06F6CBF829C7C4E000ED3CE0 /* CurrencyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListViewController.xib; sourceTree = "<group>"; };
+		06F6CBF729C7C4E000ED3CE0 /* PairListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListViewController.swift; sourceTree = "<group>"; };
+		06F6CBF829C7C4E000ED3CE0 /* PairListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairListViewController.xib; sourceTree = "<group>"; };
 		06F6CBFB29C7C50100ED3CE0 /* PairDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDisplayItem.swift; sourceTree = "<group>"; };
 		06F6CBFD29C7C53100ED3CE0 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		06F6CBFF29C7C5DD00ED3CE0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		06F6CC0129C7C60300ED3CE0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		06F6CC0429C7C6D100ED3CE0 /* CurrencyListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListRouter.swift; sourceTree = "<group>"; };
-		06F6CC0629C7C70600ED3CE0 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
-		06F6CC0829C7C9FB00ED3CE0 /* CurrencyListDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListDatasource.swift; sourceTree = "<group>"; };
-		06F6CC0A29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListDelegate.swift; sourceTree = "<group>"; };
-		06F6CC0C29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListCompositionalLayoutHelper.swift; sourceTree = "<group>"; };
+		06F6CC0429C7C6D100ED3CE0 /* PairListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListRouter.swift; sourceTree = "<group>"; };
+		06F6CC0629C7C70600ED3CE0 /* PairListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListViewModel.swift; sourceTree = "<group>"; };
+		06F6CC0829C7C9FB00ED3CE0 /* PairListDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListDatasource.swift; sourceTree = "<group>"; };
+		06F6CC0A29C7CA0D00ED3CE0 /* PairListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListDelegate.swift; sourceTree = "<group>"; };
+		06F6CC0C29C7CA2200ED3CE0 /* PairListCompositionalLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListCompositionalLayoutHelper.swift; sourceTree = "<group>"; };
 		06F6CC0F29C7CA9600ED3CE0 /* FavoritedPairCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritedPairCell.swift; sourceTree = "<group>"; };
 		06F6CC1029C7CA9600ED3CE0 /* PairCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairCell.swift; sourceTree = "<group>"; };
 		06F6CC1129C7CA9600ED3CE0 /* FavoritedPairCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritedPairCell.xib; sourceTree = "<group>"; };
@@ -94,12 +94,12 @@
 		06F6CC1329C7CA9600ED3CE0 /* PairSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSectionHeaderView.swift; sourceTree = "<group>"; };
 		06F6CC1429C7CA9600ED3CE0 /* PairCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PairCell.xib; sourceTree = "<group>"; };
 		06F6CC1B29C7CDC500ED3CE0 /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
-		06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewController.swift; sourceTree = "<group>"; };
-		06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailViewController.xib; sourceTree = "<group>"; };
-		06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
+		06F6CC2029C8131500ED3CE0 /* PairChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairChartViewController.swift; sourceTree = "<group>"; };
+		06F6CC2129C8131500ED3CE0 /* PairChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairChartViewController.xib; sourceTree = "<group>"; };
+		06F6CC2529C8133400ED3CE0 /* PairChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairChartViewModel.swift; sourceTree = "<group>"; };
 		06F6CC2A29C8646700ED3CE0 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 		06F6CC3029C88B2900ED3CE0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		06F6CC3329C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelProtocols.swift; sourceTree = "<group>"; };
+		06F6CC3329C89C7300ED3CE0 /* PairListViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListViewModelProtocols.swift; sourceTree = "<group>"; };
 		06F6CC3529C8BFA100ED3CE0 /* PairListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,8 +236,8 @@
 		06F6CBC329C7AC5100ED3CE0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CBC529C7AC7F00ED3CE0 /* CurrencyList */,
-				06F6CBC629C7AC8D00ED3CE0 /* CurrencyDetail */,
+				06F6CBC529C7AC7F00ED3CE0 /* PairList */,
+				06F6CBC629C7AC8D00ED3CE0 /* PairChart */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -253,23 +253,23 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		06F6CBC529C7AC7F00ED3CE0 /* CurrencyList */ = {
+		06F6CBC529C7AC7F00ED3CE0 /* PairList */ = {
 			isa = PBXGroup;
 			children = (
 				06F6CBF129C7C43300ED3CE0 /* Model */,
 				06F6CBF229C7C43900ED3CE0 /* View */,
 				06F6CBF329C7C43F00ED3CE0 /* ViewModel */,
 			);
-			path = CurrencyList;
+			path = PairList;
 			sourceTree = "<group>";
 		};
-		06F6CBC629C7AC8D00ED3CE0 /* CurrencyDetail */ = {
+		06F6CBC629C7AC8D00ED3CE0 /* PairChart */ = {
 			isa = PBXGroup;
 			children = (
 				06F6CC2429C8131A00ED3CE0 /* ViewModel */,
 				06F6CC1D29C812F800ED3CE0 /* View */,
 			);
-			path = CurrencyDetail;
+			path = PairChart;
 			sourceTree = "<group>";
 		};
 		06F6CBE229C7BCAC00ED3CE0 /* Response Items */ = {
@@ -296,7 +296,7 @@
 			children = (
 				06F6CC0E29C7CA6200ED3CE0 /* Cells */,
 				06F6CC0329C7C6C700ED3CE0 /* Router */,
-				06F6CBF629C7C4CD00ED3CE0 /* CurrencyListViewController */,
+				06F6CBF629C7C4CD00ED3CE0 /* PairListViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,28 +304,28 @@
 		06F6CBF329C7C43F00ED3CE0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CC0629C7C70600ED3CE0 /* CurrencyListViewModel.swift */,
-				06F6CC3329C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift */,
+				06F6CC0629C7C70600ED3CE0 /* PairListViewModel.swift */,
+				06F6CC3329C89C7300ED3CE0 /* PairListViewModelProtocols.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		06F6CBF629C7C4CD00ED3CE0 /* CurrencyListViewController */ = {
+		06F6CBF629C7C4CD00ED3CE0 /* PairListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CBF729C7C4E000ED3CE0 /* CurrencyListViewController.swift */,
-				06F6CBF829C7C4E000ED3CE0 /* CurrencyListViewController.xib */,
-				06F6CC0829C7C9FB00ED3CE0 /* CurrencyListDatasource.swift */,
-				06F6CC0A29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift */,
-				06F6CC0C29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift */,
+				06F6CBF729C7C4E000ED3CE0 /* PairListViewController.swift */,
+				06F6CBF829C7C4E000ED3CE0 /* PairListViewController.xib */,
+				06F6CC0829C7C9FB00ED3CE0 /* PairListDatasource.swift */,
+				06F6CC0A29C7CA0D00ED3CE0 /* PairListDelegate.swift */,
+				06F6CC0C29C7CA2200ED3CE0 /* PairListCompositionalLayoutHelper.swift */,
 			);
-			path = CurrencyListViewController;
+			path = PairListViewController;
 			sourceTree = "<group>";
 		};
 		06F6CC0329C7C6C700ED3CE0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CC0429C7C6D100ED3CE0 /* CurrencyListRouter.swift */,
+				06F6CC0429C7C6D100ED3CE0 /* PairListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -346,8 +346,8 @@
 		06F6CC1D29C812F800ED3CE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CC2029C8131500ED3CE0 /* CurrencyDetailViewController.swift */,
-				06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */,
+				06F6CC2029C8131500ED3CE0 /* PairChartViewController.swift */,
+				06F6CC2129C8131500ED3CE0 /* PairChartViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 		06F6CC2429C8131A00ED3CE0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */,
+				06F6CC2529C8133400ED3CE0 /* PairChartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -427,8 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F6CBB329C7A73C00ED3CE0 /* LaunchScreen.storyboard in Resources */,
-				06F6CC2329C8131500ED3CE0 /* CurrencyDetailViewController.xib in Resources */,
-				06F6CBFA29C7C4E000ED3CE0 /* CurrencyListViewController.xib in Resources */,
+				06F6CC2329C8131500ED3CE0 /* PairChartViewController.xib in Resources */,
+				06F6CBFA29C7C4E000ED3CE0 /* PairListViewController.xib in Resources */,
 				06F6CC1729C7CA9600ED3CE0 /* FavoritedPairCell.xib in Resources */,
 				06F6CC1A29C7CA9600ED3CE0 /* PairCell.xib in Resources */,
 				06F6CC1829C7CA9600ED3CE0 /* PairSectionHeaderView.xib in Resources */,
@@ -447,7 +447,7 @@
 				06F6CC1629C7CA9600ED3CE0 /* PairCell.swift in Sources */,
 				06F6CBD329C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataClass.swift in Sources */,
 				06F6CC1C29C7CDC500ED3CE0 /* Controllers.swift in Sources */,
-				06F6CC0729C7C70600ED3CE0 /* CurrencyListViewModel.swift in Sources */,
+				06F6CC0729C7C70600ED3CE0 /* PairListViewModel.swift in Sources */,
 				06F6CBDA29C7B40600ED3CE0 /* FavoriteDataProvider.swift in Sources */,
 				06F6CBA429C7A73B00ED3CE0 /* AppDelegate.swift in Sources */,
 				06F6CBE129C7BA5800ED3CE0 /* NetworkTarget.swift in Sources */,
@@ -455,19 +455,19 @@
 				06F6CBD429C7AE4000ED3CE0 /* FavoritePairEntity+CoreDataProperties.swift in Sources */,
 				06F6CBE829C7BE8300ED3CE0 /* DataRepository.swift in Sources */,
 				06F6CBEA29C7BE9F00ED3CE0 /* DataRepositoryProtocol.swift in Sources */,
-				06F6CC0B29C7CA0D00ED3CE0 /* CurrencyListDelegate.swift in Sources */,
+				06F6CC0B29C7CA0D00ED3CE0 /* PairListDelegate.swift in Sources */,
 				06F6CBFC29C7C50100ED3CE0 /* PairDisplayItem.swift in Sources */,
 				06F6CC1529C7CA9600ED3CE0 /* FavoritedPairCell.swift in Sources */,
 				06F6CBFE29C7C53100ED3CE0 /* Double+Extensions.swift in Sources */,
-				06F6CC0D29C7CA2200ED3CE0 /* CurrencyListCompositionalLayoutHelper.swift in Sources */,
+				06F6CC0D29C7CA2200ED3CE0 /* PairListCompositionalLayoutHelper.swift in Sources */,
 				06F6CC3629C8BFA100ED3CE0 /* PairListSection.swift in Sources */,
 				06F6CC0029C7C5DD00ED3CE0 /* UIView+Extensions.swift in Sources */,
-				06F6CC0529C7C6D100ED3CE0 /* CurrencyListRouter.swift in Sources */,
-				06F6CC0929C7C9FB00ED3CE0 /* CurrencyListDatasource.swift in Sources */,
+				06F6CC0529C7C6D100ED3CE0 /* PairListRouter.swift in Sources */,
+				06F6CC0929C7C9FB00ED3CE0 /* PairListDatasource.swift in Sources */,
 				06F6CC0229C7C60300ED3CE0 /* UICollectionView+Extensions.swift in Sources */,
 				06F6CBF029C7C3EC00ED3CE0 /* BaseXIBUIViewController.swift in Sources */,
 				06F6CBF529C7C46500ED3CE0 /* AppColors.swift in Sources */,
-				06F6CC2229C8131500ED3CE0 /* CurrencyDetailViewController.swift in Sources */,
+				06F6CC2229C8131500ED3CE0 /* PairChartViewController.swift in Sources */,
 				06F6CBE629C7BCDD00ED3CE0 /* BaseResponseItem.swift in Sources */,
 				06F6CBD029C7AE0600ED3CE0 /* DataStore.xcdatamodeld in Sources */,
 				06F6CC2B29C8646700ED3CE0 /* AlertHandler.swift in Sources */,
@@ -475,9 +475,9 @@
 				06F6CBD829C7B0D200ED3CE0 /* Logger.swift in Sources */,
 				06F6CBEC29C7BECD00ED3CE0 /* PairResponseItem.swift in Sources */,
 				06F6CBDC29C7B8BD00ED3CE0 /* NetworkProvider.swift in Sources */,
-				06F6CBF929C7C4E000ED3CE0 /* CurrencyListViewController.swift in Sources */,
-				06F6CC2629C8133400ED3CE0 /* CurrencyDetailViewModel.swift in Sources */,
-				06F6CC3429C89C7300ED3CE0 /* CurrencyListViewModelProtocols.swift in Sources */,
+				06F6CBF929C7C4E000ED3CE0 /* PairListViewController.swift in Sources */,
+				06F6CC2629C8133400ED3CE0 /* PairChartViewModel.swift in Sources */,
+				06F6CC3429C89C7300ED3CE0 /* PairListViewModelProtocols.swift in Sources */,
 				06F6CBEE29C7BF2600ED3CE0 /* PairChartResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
