@@ -11,7 +11,8 @@ protocol CurrencyListViewModelable: CurrencyListViewModelDataManageable {
     var reload: (() -> Void)! { get set }
     var showCollection: (() -> Void)! { get set }
     var showPairChart: ((_ pair: PairDisplayItem) -> Void)! { get set }
-    
+    var showDataOperationFail: AlertClosureSignature! { get set }
+
     func viewDidLoad()
 }
 
@@ -38,6 +39,7 @@ final class CurrencyListViewModel: CurrencyListViewModelable {
     var reload: (() -> Void)!
     var showCollection: (() -> Void)!
     var showPairChart: ((_ pair: PairDisplayItem) -> Void)!
+    var showDataOperationFail: AlertClosureSignature!
     
     init(dataRepository: DataLayerProtocol) {
         self.dataRepository = dataRepository
@@ -96,6 +98,7 @@ extension CurrencyListViewModel {
     /**
      Fetches pairs and favorites from the data repository and populates the view model's pairList and favoritedPairList properties.
      - That invokes reload action in main thread after set all datasource settings.
+     - If it is failed, It logging that case and show error message for send data process again
      */
     private func fetch() {
         Task { [weak self] in
@@ -122,7 +125,12 @@ extension CurrencyListViewModel {
                     self.showCollection()
                 }
             } catch {
-                print("Error: \(error.localizedDescription)")
+                await MainActor.run {
+                    self.showDataOperationFail("Retry", error.localizedDescription) {
+                        self.fetch()
+                    }
+                }
+
             }
         }
     }

@@ -58,6 +58,7 @@ extension CurrencyListViewController {
         viewModel.reload = reload()
         viewModel.showCollection = showCollection()
         viewModel.showPairChart = showPairChart()
+        viewModel.showDataOperationFail = showDataOperationFail()
     }
     
     private func reload() -> () -> Void {
@@ -79,6 +80,14 @@ extension CurrencyListViewController {
             }
             
             self?.loadingIndicator.stopAnimating()
+        }
+    }
+    
+    private func showDataOperationFail() -> AlertClosureSignature {
+        return { [weak self] actionTitle, message, action in
+            if let self {
+                self.router.showError(.init(controller: self, actionTitle: actionTitle, message: message), completion: action)
+            }
         }
     }
 }

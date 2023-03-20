@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CurrencyListRoutable {
+protocol CurrencyListRoutable: AlerHandler {
     var controller: UIViewController? { get set }
     func showChart(with pair: PairDisplayItem)
 }
