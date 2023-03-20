@@ -96,6 +96,7 @@
 		06F6CC2129C8131500ED3CE0 /* CurrencyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailViewController.xib; sourceTree = "<group>"; };
 		06F6CC2529C8133400ED3CE0 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
 		06F6CC2A29C8646700ED3CE0 /* AlerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerHandler.swift; sourceTree = "<group>"; };
+		06F6CC3029C88B2900ED3CE0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 		06F6CB9729C7A73B00ED3CE0 = {
 			isa = PBXGroup;
 			children = (
+				06F6CC3029C88B2900ED3CE0 /* Readme.md */,
 				06F6CBA229C7A73B00ED3CE0 /* DigiPrice */,
 				06F6CBA129C7A73B00ED3CE0 /* Products */,
 			);
