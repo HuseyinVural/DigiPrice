@@ -29,14 +29,11 @@ final class PairListCompositionalLayoutHelper: CompositionalLayoutFactory {
     */
     public func layout() -> UICollectionViewCompositionalLayout {
         return UICollectionViewCompositionalLayout { [unowned self] (section, environment) -> NSCollectionLayoutSection? in
-            if self.viewModel.numberOfSections() < 2 {
-                return self.createPairsSectionLayout()
-            }
             
-            switch section {
-            case 0:
+            switch viewModel.getSectionType(section: section) {
+            case .favorites:
                 return self.createFavoritesSectionLayout()
-            default:
+            case .pairs:
                 return self.createPairsSectionLayout()
             }
         }
