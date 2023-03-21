@@ -9,7 +9,6 @@ import Foundation
 
 struct PairResponseItem: Decodable {
     let pair: String
-    let pairNormalized: String
     let last: Double
     let volume: Double
     let dailyPercent: Double

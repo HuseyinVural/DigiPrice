@@ -44,7 +44,7 @@ final class PairChartViewModel: PairChartViewModelable {
      Calls `fetch()` and `didGetNavigationBarTitle(_:)`.
      */
     func viewDidLoad() {
-        didGetNavigationBarTitle(pair.denominatorSymbol + "/" + pair.numeratorSymbol + " Chart")
+        didGetNavigationBarTitle(pair.numeratorSymbol + "/" + pair.denominatorSymbol + " Chart")
         fetch()
     }
     

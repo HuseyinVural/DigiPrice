@@ -43,7 +43,7 @@ final class PairListCompositionalLayoutHelper: CompositionalLayoutFactory {
     }
     
     /**
-     - Cates a header that contains PairSectionHeaderView.
+     - Creates a header that contains PairSectionHeaderView.
     */
     private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         let size = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(20))
@@ -51,7 +51,7 @@ final class PairListCompositionalLayoutHelper: CompositionalLayoutFactory {
     }
     
     /**
-     - Cates a collection view with fixed height sliding to the right.
+     - Creates a collection view with fixed height sliding to the right.
      - It has a header.
     */
     private func createFavoritesSectionLayout() -> NSCollectionLayoutSection? {
@@ -75,7 +75,7 @@ final class PairListCompositionalLayoutHelper: CompositionalLayoutFactory {
     }
     
     /**
-     - Cates a vertical collection view flow with full width sliding to the bottom.
+     - Creates a vertical collection view flow with full width sliding to the bottom.
      - It has a header.
     */
     private func createPairsSectionLayout() -> NSCollectionLayoutSection? {
