@@ -91,6 +91,8 @@ extension PairChartViewController {
         navigationBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         navigationBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         
+        navigationBar.bottomAnchor.constraint(equalTo: chartView.topAnchor, constant: -16).isActive = true
+
         navigationBar.items = [item]
     }
     
