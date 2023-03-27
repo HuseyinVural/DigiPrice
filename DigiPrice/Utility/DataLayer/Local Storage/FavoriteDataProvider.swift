@@ -41,7 +41,7 @@ final class FavoriteDataProvider: FavoriteDataProvidable {
         req.fetchLimit = 200
         mainContext.performAndWait { [weak self] in
             guard let self else {
-                fatalError()
+                return
             }
             
             do {
@@ -83,7 +83,7 @@ final class FavoriteDataProvider: FavoriteDataProvidable {
         req.fetchLimit = 1
         mainContext.performAndWait { [weak self] in
             guard let self else {
-                fatalError()
+                return
             }
             
             do {
